@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Application Form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form | MrAli</title>
+    <link rel="shortcut icon" href="images/pageLogo.png" type="image/x-icon"> <!--title icon-->
+
+</head>
+
+<body style="background-color: #eccccc; font-family: cairo; ">
+
+    <fieldset
+        style="background-color: #ad6060; border: 5px #000000 solid; min-width: 50%; max-width: 60; margin: auto; margin-top: 2%; padding: 1.5%; padding-bottom: 0;">
+
+        <!-- #region Legend-->
+        <legend style=" background-color: #eccccc; border: 5px #000000 solid;">
+            <h1 style="padding-left: 25px; padding-right: 25px; margin-top: 0; margin-bottom: 0; ">
+                Application Form
+            </h1>
+        </legend>
+        <!-- #endregion -->
+
+        <form action="" method="get" autocomplete="off"
+            style="background: #eccccc; padding: 10%; padding-bottom: 5%; padding-top: 5%; border: 2px #000000 solid;">
+
+            <!-- #region Audio-->
+
+            <div class="misr" style="text-align: center;">
+                <button type="button" onclick="playAudio()" style="font-size: large; padding: 10px; width: 200px;">
+                    Click Here <span style="font-size: 40px;">👺</span>
+                </button>
+                <br>
+                <br>
+                <img src="images/cat-nooooo.webp" alt="fun-pic" width="40%">
+
+                <audio src="audios/fun.mp3" id="myAudio" hidden controls>audio not
+                    supported</audio>
+                <br>
+                <br>
+            </div>
+            <!-- #endregion -->
+
+            <!-- #region Personal Info-->
+            <fieldset class="PersonalInfo" style="border: 5px #000000 solid; padding: 10%;">
+                <!-- #region Legend-->
+                <legend style="background-color: #ad6060; border: 5px #000000 solid;">
+                    <h2
+                        style="color: #eccccc; padding-left: 25px; padding-right: 25px; margin-top: 0; margin-bottom: 0; ">
+                        Personal Info</h2>
+                </legend>
+                <!-- #endregion -->
+
+
+
+
+
+                <!-- #region Name Prefix-->
+                <div class="namePrefix">
+                    <label for="namePrefix">Name Prefix&nbsp;&nbsp;:&emsp;</label>
+                    <input type="text" name="namePrefix" id="namePrefix" placeholder="Name Prefix or Job title" value=""
+                        style="text-align: center;" list="prefixList" autofocus required>
+                    <datalist id="prefixList">
+                        <option value="Mr.">male "married or not".</option>
+                        <option value="Mrs.">married female.</option>
+                        <option value="Ms.">female "married or not".</option>
+                        <option value="Miss">unmarried female.</option>
+                    </datalist>
+                </div>
+                <!-- #endregion -->
+                <!-- #region First Name-->
+                <div class="fname">
+                    <label for="fname">First name&emsp;:&emsp;</label>
+                    <input type="text" name="fname" id="fname" placeholder="First Name" value=""
+                        style="text-align: center;" required>
+                </div>
+                <!-- #endregion -->
+                <!-- #region Last Name-->
+                <div class="lname">
+                    <label for="lname">Last name&emsp;:&emsp;</label>
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" value=""
+                        style="text-align: center;" required>
+                </div>
+                <!-- #endregion -->
+                <!-- #region Email-->
+                <div class="email">
+                    <label for="email">Email&emsp;&emsp;&emsp;:&emsp;</label>
+                    <input type="email" name="email" id="email" placeholder="Valid Email" style="text-align: center;"
+                        required>
+                </div>
+                <!-- #endregion -->
+                <!-- #region Password-->
+                <div class="password">
+                    <label for="password">Password&emsp; :&emsp;</label>
+                    <input type="password" name="password" id="password" placeholder="Strong Password"
+                        style="text-align: center;" required>
+                </div>
+                <!-- #endregion -->
+                <!-- #region Birthday-->
+                <div class="birthday">
+                    <label for="birthday">Date of birth :&emsp;</label>
+                    <input type="date" name="birthday" id="birthday" style="width:175px; text-align: center;" required>
+                </div>
+                <!-- #endregion -->
+                <!-- #region Birthcoundty-->
+                <div class="birthcountry">
+                    <label for="birthcountry">Birth country :&nbsp;&nbsp;&nbsp;</label>
+                    <select name="birthcountry" id="birthcountry" size="1" required
+                        style="width:175px; text-align: center;">
+                        <optgroup label="إقليم القاهرة الكبرى">
+                            <option>القاهرة</option>
+                            <option>الجيزة</option>
+                            <option>القليوبية</option>
+                        </optgroup>
+                        <optgroup label="إقليم الإسكندرية">
+                            <option>الإسكندرية</option>
+                            <option>البحيرة</option>
+                            <option>مطروح</option>
+                        </optgroup>
+                        <optgroup label="إقليم الدلتا">
+                            <option>الدقهلية</option>
+                            <option>كفر الشيخ</option>
+                            <option>الغربية</option>
+                            <option>المنوفية</option>
+                            <option>دمياط</option>
+                        </optgroup>
+                        <optgroup label="إقليم القناة">
+                            <option>بورسعيد</option>
+                            <option>الإسماعيلية</option>
+                            <option>السويس</option>
+                            <option>الشرقية</option>
+                            <option>شمال سيناء</option>
+                            <option>جنوب سيناء</option>
+                        </optgroup>
+                        <optgroup label="إقليم شمال الصعيد">
+                            <option>بني سويف</option>
+                            <option>المنيا</option>
+                            <option>الفيوم</option>
+                        </optgroup>
+                        <optgroup label="إقليم وسط الصعيد">
+                            <option>أسيوط</option>
+                            <option>الوادي الجديد</option>
+                        </optgroup>
+                        <optgroup label="إقليم جنوب الصعيد">
+                            <option>سوهاج</option>
+                            <option>قنا</option>
+                            <option>الأقصر</option>
+                            <option>أسوان</option>
+                            <option>البحر الأحمر</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <!-- #endregion -->
+                <!-- #region Gender-->
+                <div>
+                    <label for="">Gender&emsp;&emsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+                    <div style="display: inline;">
+                        <!-- #region Male-->
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <label for="male">Male</label>
+                        <!-- #endregion -->
+                        <!-- #region Female-->
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="gender" id="female" value="female" required>
+                        <label for="female">Female</label>
+                        <!-- #endregion -->
+                    </div>
+                </div>
+                <!-- #endregion -->
+            </fieldset>
+            <!-- #endregion -->
+            <br>
+            <hr>
+            <!-- #region Contact Info-->
+            <div class="ContactInfo">
+                <h2 style="text-align: center;"><u>Contact Info</u></h2>
+                <!-- #region Phone Number-->
+                <div class="phone">
+                    <label for="phone">Phone Number&emsp; :&emsp;</label>
+                    <input type="text" minlength="11" maxlength="11" name="phone" id="phone"
+                        placeholder="Whatsapp Number" pattern="0.*" value="" style="text-align: center;">
+                </div>
+                <!-- #endregion -->
+                <!-- #region LinkedIn URL-->
+                <div class="linkedin">
+                    <label for="linkedin">LinkedIn URL&emsp;&emsp;:&emsp;</label>
+                    <input type="url" name="linkedinURL" id="linkedin" placeholder="https://example.com"
+                        pattern="https://www.linkedin.com/in/.*" value="" style="text-align: center;">
+                </div>
+                <!-- #endregion -->
+            </div>
+            <!-- #endregion -->
+            <!-- #region Availability-->
+            <div class="availability">
+                <label for=""><u>Availability</u>&emsp;&emsp;&emsp;:</label>
+                <div class="availabilityDays" style=" text-align: center;">
+                    <!-- #region Sunday-->
+                    <div class="Sunday">
+                        <input type="checkbox" name="availability" id="Sunday" value="Sunday">
+                        <label for="Sunday">
+                            Sunday
+                            &emsp;&emsp;&emsp;<span>Form</span>
+                            <input type="time" name="from" id="" value="07:00:00">
+                            <span>to</span>
+                            <input type="time" name="to" id="" value="15:00:00">
+                        </label>
+                    </div>
+                    <!-- #endregion -->
+                    <!-- #region Wednesday-->
+                    <div class="Wednesday">
+                        <input type="checkbox" name="availability" id="Wednesday" value="Wednesday">
+                        <label for="Wednesday">
+                            Wednesday
+                            &emsp; <span>Form</span>
+                            <input type="time" name="from" id="" value="07:00:00">
+                            <span>to</span>
+                            <input type="time" name="to" id="" value="15:00:00">
+                        </label>
+                    </div>
+                    <!-- #endregion -->
+                </div>
+            </div>
+            <!-- #endregion -->
+            <br>
+            <hr>
+            <!-- #region Soft Skills Info-->
+            <div class="SoftSkills">
+                <h2 style="text-align: center;"><u>Soft Skills Info</u></h2>
+                <!-- #region TimeManagement-->
+                <div class="TimeManagement">
+                    <label for="TimeManagement">Time management&emsp;&emsp;</label>
+                    <input type="range" name="TimeManagement" id="TimeManagement" value="70" step="10">
+                </div>
+                <!-- #endregion -->
+                <!-- #region Communication-->
+                <div class="Communication">
+                    <label for="Communication">Communication&emsp;&emsp;&emsp;&nbsp;</label>
+                    <input type="range" name="Communication" id="Communication" value="50" step="10">
+                </div>
+                <!-- #endregion -->
+                <!-- #region Problem-solving-->
+                <div class="Problem-solving">
+                    <label for="Problem-solving">Problem-solving&emsp;&emsp;&emsp;</label>
+                    <input type="range" name="Problem-solving" id="Problem-solving" value="70" step="10">
+                </div>
+                <!-- #endregion -->
+            </div>
+            <!-- #endregion -->
+            <br>
+            <hr>
+            <!-- #region Other Data-->
+            <div class="OtherData">
+                <h2 style="text-align: center;"><u>Other Info</u></h2>
+                <!-- #region CV-->
+                <div class="SharingInfo">
+                    <label for="SharingInfo">Upload your CV &nbsp;&emsp;</label>
+
+                    <input type="file" accept="application/pdf">
+
+                </div>
+                <!-- #endregion -->
+                <!-- #region FavoriteColor-->
+                <div class="FavoriteColor">
+                    <label for="color">Favorite Color</label>
+                    &emsp;&emsp;<input type="color" name="color" id="color">
+                </div>
+                <!-- #endregion -->
+                <!-- #region Share with us some information-->
+                <div class="SharingInfo">
+                    <label for="SharingInfo">Share with us some information</label>
+                    <br>
+                    <textarea name="SharingInfo" id="SharingInfo" cols="50" rows="7"
+                        style="margin-left: 1vw;"></textarea>
+                </div>
+                <!-- #endregion -->
+
+
+            </div>
+            <!-- #endregion -->
+
+            <br>
+            <hr>
+            <p style="color: red;">* Please, verify that all the above information is true and accurate.</p>
+            <div class="submit" style="text-align: center;">
+                <input type="submit" name="submit" formaction="videos/fun.mp4" value="Submit without HTML validation"
+                    formnovalidate>
+
+                OR&emsp;
+
+                <input type="submit" name="submit" value="Send Data" formaction="videos/fun.mp4" formtarget="_blank">
+
+                OR&emsp;
+
+                <input type="image" name="submit" formaction="videos/fun.mp4" formtarget="_blank" value="Send Data"
+                    src="images/images.jpeg" alt="submit button" title="submit button" width="55px">
+
+                <!-- OR&emsp;
+
+                <button type="submit" name="submit" formaction="videos/fun.mp4" formtarget="_blank" value="Send Data"
+                    onclick="alert('Done!')">
+                    <img src="imagses/images.jpeg" alt="submit button" title="submit button" width="50px">
+                    <br>
+                    <br>
+                    <span>=> Submit button with a picture & <b style="color: red;">alert</b>.</span>
+                </button> -->
+            </div>
+
+        </form>
+        <p style="text-align: center;"><span
+                style="font-family:Arial, Helvetica, sans-serif; font-weight: bold;">&copy;</span> 2023 Application
+            Form developed by Mr. <a href="https://wa.me/201022033579" target="_blank">Ali Ahmed</a> &#128151;
+        </p>
+    </fieldset>
+    <script>
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+            x.play();
+        }
+    </script>
+</body>
+
+</html>
